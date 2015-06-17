@@ -4,6 +4,7 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              android:stretchColumns="*"
+             android:background="@drawable/remote_control_bg"
              tools:ignore="IncludeLayoutParam">
 
     <TextView
@@ -14,6 +15,8 @@
         android:gravity="center"
         android:text="0"
         android:textSize="50dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/window_p"
         />
 
     <TextView
@@ -22,11 +25,11 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:layout_margin="15dp"
-        android:background="#555555"
+        android:background="@drawable/bar_p"
         android:gravity="center"
         android:text="0"
-        android:textColor="#cccccc"
         android:textSize="20dp"
+        android:textStyle="italic"
     />
 
     <include

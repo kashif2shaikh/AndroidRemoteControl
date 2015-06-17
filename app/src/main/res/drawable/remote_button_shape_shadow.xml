@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item>-->
+        <!--&lt;!&ndash; Shadow Shape &ndash;&gt;-->
+        <!--<shape android:shape="rectangle">-->
+            <!--<corners android:radius="5dp" />-->
+
+            <!--<gradient-->
+                <!--android:angle="90"-->
+                <!--android:centerColor="#303339"-->
+                <!--android:centerY="0.05"-->
+                <!--android:endColor="#000000"-->
+                <!--android:startColor="#000000"/>-->
+        <!--</shape>-->
+    <!--</item>-->
+
+    <item android:top="3dp" android:left="3dp"> <!-- This shrinks the shadow with top and left offset-->
+        <shape android:shape="rectangle">
+            <corners android:radius="3dp" />
+            <solid android:color="@android:color/darker_gray" />
+            <!--<gradient-->
+                <!--android:angle="90"-->
+                <!--android:centerColor="#AEAEAE"-->
+                <!--android:centerY="0.05"-->
+                <!--android:endColor="#DEDEDE"-->
+                <!--android:startColor="#DEDEDE"/>-->
+            <padding
+                android:bottom="3dp"
+                android:right="3dp"/>
+                android:right="3dp"/>
+        </shape>
+    </item>
+    <item>
+        <!-- Normal Button State -->
+        <selector xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:state_pressed="false">
+                <shape android:shape="rectangle">
+
+                    <corners android:radius="3dp" />
+
+                    <gradient
+                        android:angle="90"
+                        android:endColor="#cccccc"
+                        android:startColor="#acacac"/>
+
+                </shape>
+            </item>
+
+            <!-- Pressed Button State -->
+            <item android:state_pressed="true">
+                <shape android:shape="rectangle">
+
+                    <corners android:radius="3dp" />
+
+                    <gradient
+                        android:angle="270"
+                        android:endColor="#cccccc"
+                        android:startColor="#acacac"/>
+
+                </shape>
+            </item>
+        </selector>
+    </item>
+</layer-list>
